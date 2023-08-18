@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #e6e6e6;
+}
+
+:root {
+    --Color-Primary: rgb(255, 50, 0);
+}
+
+.menu-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu {
+    padding: 0.5rem;
+    width: 90%;
+}
+
+.boton {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-weight: 500;
+    color: white;
+    text-shadow: none;
+    background: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
+    text-decoration: none;
+    width: 10vw;
+    text-align: center;
+}
+
+.logo {
+    width: 10vh;
+}
+
+p,
+h2 {
+    font-size: large;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+.content-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flat {
+    width: 2vw;
+    margin-left: 1vw;
+}
+
+header,
+footer {
+    background-color: var(--Color-Primary);
+    height: fit-content;
+    min-height: 5vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main section {
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+
+.img-1-index {
+    width: 80vw;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.content-main,
+.content-main-listas {
+    width: 80vw;
+    margin-bottom: 2vh;
+}
+
+.img-of-paragraph,
+.img-of-paragraph-benefits {
+    width: 40vw;
+    object-fit: cover;
+}
+
+.img-and-paragraph {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.paragraph {
+    width: 30vw;
+}
+
+.order-about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#paragraph-mod-in-contact {
+    margin-top: 2vh;
+    text-align: center;
+    width: 50vw;
+}
+
+.contact-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.img-contact {
+    width: 80vw;
+    height: 60vh;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.hay-tabla {
+    display: flex;    
+    margin-bottom: 3vh;
+    min-height: 80vh;
+}
+
+table,
+th,
+td,
+tr {
+    border: 5px solid #0C356A;
+    border-collapse: collapse;
+    padding: 1rem;
+}
+
+.content-benefits {
+    min-height: 70vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.list-benefits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.img-benefits {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.content-images-benefits {
+    width: 50%;
+}
+
+#separation-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 50%;
+    font-size: large;
+}
+
+.list-benefits {
+    margin-left: 2rem;
+}
+
+.content-raffle {
+    min-height: 50vh;
+    width: 80vw;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-map {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10rem;
+}
+
+.map {
+    border: 0;
+    width: 70%;
+    height: 50vh;
+    margin-top: 1rem;
+}
+
+.content-form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10rem;
+}
+
+fieldset {
+    border: 0;
+    margin: 0.5rem
+}
+
+.form {
+    background-color: rgb(241, 241, 241);
+    border: #0C356A solid 1px;
+    padding: 2rem;
+    font-size: larger;
+    display: flex;
+    gap: 0.2rem;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+    height: 90%;
+}
+
+.form .send {
+    width: fit-content;
+    padding: 0.5rem;
+    margin: auto;
+}
+
+
+/* Estilos generales para todos los tamaños de pantalla */
+/* Estilos para pantallas con un ancho máximo de 320px */
+@media (max-width: 320px) {
+.menu-logo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.menu {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+}
+.boton {
+        flex-direction: column;
+        align-items: center;
+        width: 30vw;
+    }
+.img-and-paragraph {
+    flex-direction: column-reverse;
+    font-size: large;
+    }
+    #media1, #media2, #media3 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    .contact-information, .order-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+      }
+      table,th,td,tr {
+        padding: 0;
+        margin: 0;
+        width: 5vw;
+        height: 5vh;
+        min-height: 50vh;
+      }
+      .content-benefits {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10rem;
+      }
+      .content-raffle {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;        
+      }
+
+      .content-map, .content-form {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
+         }
+}
+/* Estilos para pantallas con un ancho máximo de 320px */
+/* Estilos para pantallas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    .menu-logo {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .menu {
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            justify-content: center;
+            align-items: center;
+    }
+    .boton {
+            flex-direction: column;
+            align-items: center;
+            width: 30vw;
+        }
+    .img-and-paragraph {
+        flex-direction: column-reverse;
+        font-size: large;
+        }
+        #media1, #media2, #media3 {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+        }
+        .contact-information, .order-about {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: left;
+          }
+          table,th,td,tr {
+            padding: 2rem;
+            margin: 0;
+            width: 5vw;
+            height: 5vh;
+            min-height: 50vh;
+          }
+          .content-benefits {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10rem;
+          }
+          .content-raffle {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;        
+          }
+    
+          .content-map, .content-form {
+            width: 100%;
+            margin: auto;
+            margin-bottom: 2rem;
+             }
+}
+
+/* Estilos para pantallas con un ancho máximo de 768px */
+/* Estilos para pantallas con un ancho máximo de 1024px */
+@media (max-width: 1024px) {
+    .menu-logo {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .menu {
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            justify-content: center;
+            align-items: center;
+    }
+    .boton {
+            flex-direction: column;
+            align-items: center;
+            width: 30vw;
+        }
+    .img-and-paragraph {
+        flex-direction: column-reverse;
+        font-size: large;
+        }
+        #media1, #media2, #media3 {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+        }
+        .contact-information, .order-about {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: left;
+          }
+          table,th,td,tr {
+            padding: 2rem;
+            margin: 0;
+            width: 5vw;
+            height: 5vh;
+            min-height: 50vh;
+          }
+          .content-benefits {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10rem;
+          }
+          .content-raffle {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;        
+          }
+    
+          .content-map, .content-form {
+            width: 100%;
+            margin: auto;
+            margin-bottom: 2rem;
+             }
+}
+
+/* Estilos para pantallas con un ancho máximo de 1024px */

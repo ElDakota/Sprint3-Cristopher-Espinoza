@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+    <title>Muse Mind | Benefits</title>
+</head>
+
+<body>
+    <header class="menu-logo">
+        <nav class="menu">
+            <a class="boton" href="../index.html">Home</a>
+            <a class="boton" href="./aboutUs.html">About</a>
+            <a class="boton" href="./contact.html">Contact</a>
+            <a class="boton" href="./information.html">Information</a>
+            <a class="boton" href="./benefitsTips.html">Benefits</a>
+            <a class="boton" href="#">Raffle</a>
+        </nav>
+        <a href="../index.html"><img class="logo" src="../images/logo.png" alt="logo"></a>
+    </header>
+    <h1>Raffle</h1>
+    <h2 class="h2-underline">you can collaborate to hold an exhibition event and participate in a raffle to win an easel</h2>
+    <main>
+        <div class="content-raffle">
+            <div class="content-map">
+                <h2>Our location is location at:</h2>
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.6897532054!2d-118.41173249999999!3d34.020479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses-419!2scl!4v1692327858028!5m2!1ses-419!2scl"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="content-form">
+                <form action="./show_data.html" method="get" class="form">
+
+                    <label for="first_Name">First Name</label>
+                    <input name="first_Name" type="text" id="first_Name">
+
+                    <label for="last_Name">Last Name</label>
+                    <input name="last_Name" type="text" id="last_Name">
+
+                    <label for="chose_Theme_Art">Chose Theme Art</label>
+                    <select name="chose_Theme_Art" id="chose_Theme_Art">
+                        <option>-</option>
+                        <option>Surreal art</option>
+                        <option>Abstract art</option>
+                        <option>Expressionism</option>
+                    </select>
+
+                    <fieldset>
+                        <legend>Payment Options</legend>
+                        <input type="radio" id="cash" name="payment_options" value="cash">
+                        <label for="cash">Cash</label><br>
+
+                        <input type="radio" id="credit_Card" name="payment_options" value="credit_Card">
+                        <label for="credit_Card">Credit Card</label><br>
+
+                        <input type="radio" id="debit_Card" name="payment_options" value="debit_Card">
+                        <label for="debit_Card">Debit Card</label>
+                    </fieldset>
+
+                    <label for="message">Message (Optional) </label>
+                    <input type="text" id="message" name="message" autocomplete="off">
+
+                    <fieldset id="check-terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I accept termsand conditions </label>
+                        <input class="send" type="submit" value="send">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <footer class="content-footer">
+        <p>Created by: Cristopher Espinoza</p><img class="flat"
+            src="https://cdn.icon-icons.com/icons2/45/PNG/64/Chile_flags_flag_9029.png" alt="banderita Chilena">
+    </footer>
+</body>
+
+</html>
